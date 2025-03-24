@@ -1,0 +1,68 @@
+/* تنسيق عام للصفحة */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
+    background-color: #f7dd91;
+}
+
+/* صندوق تسجيل الخروج */
+.logout-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+}
+
+/* العنوان */
+.logout-box h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* الأزرار */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* زر "نعم" */
+button.yes {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* زر "لا" */
+button.no {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* تأثير الأزرار عند التمرير */
+button.yes:hover {
+    background-color: #218838;
+}
+
+button.no:hover {
+    background-color: #f0f0f0;
+}

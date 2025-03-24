@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #f1f1f1da;
+    --live-color: rgb(255, 61, 61);
+    --upcoming-color: #095700;
+    --finished-color: rgb(0, 0, 0);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #095700;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    position: relative;
+    left: 78%;
+}
+
+.navigation {
+    position: relative;
+    right: 91%;
+}
+
+.navigation a{
+    color: #095700;    
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    position: relative;
+    right: 20%;
+}
+
+.navigation a:hover{
+    color: #f4ce5c;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gogo {
+    width: 600px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    border-radius: 45px;
+}
+
+.gogo:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+section {
+    padding: 100px 200px;
+}
+/* Bar Start */
+/* ----------Start Header---------- */
+/* .header {
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+}
+.header .links {
+    position: relative;
+}
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+}
+.header .links .icon span:first-child {
+    height: 2px;
+    width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+height: 2px;
+width: 60%;
+transition: 0.3s;
+}
+.header .links .icon span:last-child {
+height: 2px;
+width: 100%;
+}
+.header .links .icon {
+    justify-content: flex-end;
+}
+.header .links ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--section-background);
+    position: absolute;
+    right: 0%;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1; /*To make the bars above of the body
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--section-background) transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links:hover ul {
+    display: block;
+}
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+} */
+/* ----------End Header---------- */
+
+
+/* Bar End */
+.main {
+    width: 100%;
+    align-items: center;
+    background-color: bisque;
+    background-image: url(images/logo.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #095700;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.login-card h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.login-input,
+.login-pass {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.login-input:focus,
+.login-pass:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 5px 10px rgba(0, 91, 187, 0.3);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #095700;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.crd {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.crd:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #095700;
+    font-size: 8em;
+    text-align: center;
+}
+
+.linkto {
+    text-decoration: none;
+    color: black;
+    direction: rtl;
+}
+
+/* Matches Section Start */
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    text-align: center;
+    padding: 0 0 20px 0px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+.match-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--main-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.match-text p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+    text-align: center;
+}
+
+.team img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+}
+.score > p {
+    margin-bottom: 5px;
+}
+.score-time {
+    font-size: 14px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+button.live-score {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+button.upcoming-score {
+    margin-top: 10px;
+    background-color: var(--upcoming-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+button.finished-score {
+    margin-top: 10px;
+    background-color: var(--finished-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.score button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Matches Section End */
+
+
+/* Footer Start */
+footer {
+    background-color: #095700;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer-message {
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: -5px;
+}
+.contact-info {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-info i {
+    font-size: 18px;
+}
+/* Footer End */
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+.logo{
+    text-decoration: none;
+    color: #095700;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    position: relative;
+    left: -48%;
+}
+
+.navigation {
+    position: relative;
+    right: -20%;
+}
+
+.navigation a{
+    color: #095700;    
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    position: relative;
+    right: 20%;
+}
+
+.navigation a:hover{
+    color: #f4ce5c;
+}
+
+ul{
+    list-style-type: none;
+}
+.calender{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.month{
+    padding: 70px 25px;
+    width: 100%;
+    background: #095700;
+    text-align: center;
+}
+.month ul{
+    margin: 0;
+    padding: 0;
+}
+.month ul li{
+    color: #ccc;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month .prev{
+    float: left;
+    padding-top: 10px;
+}
+.month .next{
+    float: right;
+    padding-top: 10px;
+}
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ccc;
+}
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+.days{
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    cursor: pointer;
+}
+.days li{
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+.days li .active{
+    padding: 5px;
+    background: #095700;
+    color: white !important;
+}
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+@media screen and (max-width:420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active{padding: 2px;}
+}
+@media screen and (max-width:290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/* Live Matches Start */
+.live-matches-container {
+    direction: rtl;
+    text-align: right;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+.live-matches-container > p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+.live-matches {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #666;
+    cursor: pointer;
+}
+
+.live-matches p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    direction: rtl;
+    text-align: right;
+    padding: 0 5px;
+    margin: 5px 0;
+}
+.live-matches div {
+    direction: rtl;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: 98%;
+}
+.live-matches img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Live Matches End */
+
+/* Recommended Clubs Start */
+.recommended-clubs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    direction: rtl;
+    text-align: right;
+}
+.recommended-clubs-p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+.recommended-clubs div {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: 98%;
+    background-position: left;
+}
+.recommended-clubs div.England-league {
+    background-image: url(images/England_league.jpg);
+}
+.recommended-clubs div.Spain-league {
+    background-image: url(images/Spain_league.jpg);
+}
+.recommended-clubs div.France-league {
+    background-image: url(images/France_league.jpg);
+}
+.recommended-clubs div.Italy-league {
+    background-image: url(images/Italy_league.jpg);
+}
+.recommended-clubs div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recommended-clubs div img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 35%;
+    right: 5%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid white;
+}
+.recommended-clubs p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #095700;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 5px 1px 20px 1px;
+    transition: transform 0.3s ease;
+}
+.recommended-clubs h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+/* Recommended Clubs End */
+

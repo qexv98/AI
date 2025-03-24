@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="live-match-style.css">
+    <title>المباريات المباشرة</title>
+</head>
+    <body>
+        <h1>المباريات المباشرة</h1>
+        <form action="/tryit/submitted" method="post">
+   
+   <label for="languages">قم بإختيار لغة التعليق : </label>
+   
+   <select id="select" name="select">
+    <option value="العربية">العربية</option>
+    <option value="english">English</option>
+    <option value="french">French</option>
+    <option value="spanish">Spanish</option>
+   </select>
+   
+   <br><br>
+
+   <label for="languages">قم بإختيار نوع التعليق : </label>
+
+   <select id="select" name="select">
+    <option value="حماسي">حماسي</option>
+    <option value="تكتيكي">تكتيكي</option>
+   </select>
+        </form>
+
+    <div class="image-container">
+        <img src="images/ملعب.jpg" alt="live-match">
+       
+
+       <div class="overlay-box">
+        <img src="images/robot-question.jpg" alt="comment-icon">
+        <p>مرحبا بك !</p>
+        <p>كيف يمكنني مساعدتك اليوم ؟</p>
+        <textarea placeholder="...اكتب تعليقك هنا"></textarea>
+       </div>
+    </div>
+
+
+
+
+
+    <div class="conta">
+        <div class="header">
+          <h2>التعليقات</h2>
+          <select>
+            <option>الأهم</option>
+            <option>أحدث التعليقات</option>
+          </select>
+    <button class="navigate-button" onclick="window.location.href='other.html'">Go other</button>
+
+        </div>
+    
+        <div class="comment-box">
+          <div class="pinned">📌 تم تثبيته من قبل AI</div>
+          <div class="comment-header">
+            <img src="images/leap.jpeg" alt="user">
+            <div><strong>@Bayan_200</strong> - 1 minute ago</div>
+          </div>
+          <div class="comment-body">
+            <br>متحمس جداااا للمشاهده في هذا الويب🤯🤯🤯<br>
+          </div>
+        </div>
+    
+        <div class="comment-box">
+          <div class="comment-header">
+            <img src="images/Etihad.png" alt="user">
+            <div><strong>@ahmed_996</strong> - 27 seconds ago</div>
+          </div>
+          <div class="comment-body">
+            الحماااااس ترليووون🤩⚽
+          </div>
+          <div class="comment-actions">
+            <span>👍 4</span>
+            <span>💬</span>
+          </div>
+        </div>
+    
+        <div class="comment-box">
+          <div class="comment-header">
+            <img src="images/cat.jpg" alt="user">
+            <div><strong>@Azhar-sh</strong> - 12 seconds ago</div>
+          </div>
+          <div class="comment-body">
+            ياخي شكرا من قلب على هذا الموقع الرهيب !!
+          </div>
+          <div class="comment-actions">
+            <span>👍 2</span>
+            <span>💬</span>
+          </div>
+        </div>
+    
+        <div class="comment-box">
+          <div class="comment-header">
+            <img src="images/flord.jpg" alt="user">
+            <div><strong>@Duaa-i9</strong> - Now</div>
+          </div>
+          <div class="comment-body">
+             مباراه الهلال والاتحاد حمااس
+          </div>
+          <div class="comment-actions">
+            <span>👍 23</span>
+            <span>💬</span>
+          </div>
+        </div>
+    
+        <div class="input-bar">
+          <input type="text" placeholder="إضافة تعليق...">
+          <button>📝</button>
+        </div>
+      </div>
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مباراة الهلال</title>
+    <link rel="stylesheet" href="other.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <button id="btn-hilal">الهلال</button>
+        <button id="btn-ittihad">الاتحاد</button>
+    </div>
+
+    <div id="stadium-container">
+        <div id="hilal" class="team-section">
+            <h2>تشكيلة الهلال</h2>
+            <div class="field">
+                <img src="images/alhilal.jpg" alt="تشكيلة الهلال">
+            </div>
+            <div class="container">
+                <h2>طاقم التدريب</h2>
+                <div class="coach">
+                    <img src="images/coach.jpg" alt="صورة المدرب">
+                    <p>جورجي جيسوس</p>
+                </div>
+        
+                <h2>البدلاء</h2>
+                <div class="substitutes">
+                    <div class="sub">
+                        <p>حمد اليامي <span class="time">90'</span></p>
+                        <p>⬅ سالم الدوسري</p>
+                    </div>
+                    <div class="sub">
+                        <p>ياسر الشهراني <span class="time">79'</span> <span class="rating">6.6</span></p>
+                        <p>⬅ رينان لودي</p>
+                    </div>
+                    <div class="sub">
+                        <p>خليفة الدوسري <span class="time">60'</span> <span class="rating">6.7</span></p>
+                        <p>⬅ حسان تمبكتي</p>
+                    </div>
+                    <div class="sub">
+                        <p>ناصر الدوسري <span class="time">59'</span> <span class="rating">6.8</span></p>
+                        <p>⬅ ماركوس ليوناردو</p>
+                    </div>
+                </div>
+        
+                <h2>مقاعد البدلاء</h2>
+                <div class="bench">
+                    <p>خالد الغنام - مهاجم أيمن</p>
+                    <p>عبدالله الحمدان - المهاجم الصريح</p>
+                    <p>محمد القحطاني - لاعب الوسط الجناح</p>
+                    <p>محمد الربيعي - حارس مرمى</p>
+                    <p>محمد كنو - لاعب الوسط المحور</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="ittihad" class="team-section hidden">
+            <h2>تشكيلة الاتحاد</h2>
+            <div class="field">
+                <img src="images/ittihad.jpg" alt="تشكيلة الاتحاد">
+            </div>
+            <div class="container">
+                <h2>طاقم التدريب</h2>
+                <div class="coach">
+                    <img src="images/coach_ittihad.webp" alt="صورة المدرب">
+                    <p>لوران بلان</p>
+                </div>
+        
+                <h2>البدلاء</h2>
+                <div class="substitutes">
+                    <div class="sub">
+                        <p>عبد الرحمن العبود <span class="time">90'</span></p>
+                        <p>⬅ فابينيو</p>
+                    </div>
+                    <div class="sub">
+                        <p>فواز الصقور <span class="time">73'</span> <span class="rating">6.2</span></p>
+                        <p>⬅ مهند الشنقيطي</p>
+                    </div>
+                    <div class="sub">
+                        <p>صالح الشهري <span class="time">73'</span> <span class="rating">6.4</span></p>
+                        <p>⬅ ستيفن بيرجوين</p>
+                    </div>
+                    <div class="sub">
+                        <p>سعد الموسى <span class="time">53'</span> <span class="rating">6.7</span></p>
+                        <p>⬅ دانيلو بيريرا</p>
+                    </div>
+                </div>
+        
+                <h2>مقاعد البدلاء</h2>
+                <div class="bench">
+                    <p>عبد العزيز البيشي - مهاجم أيمن</p>
+                    <p>حامد الغامدي - لاعب الوسط المحور</p>
+                    <p>محمد المحاسنة - حارس مرمى</p>
+                    <p>معاذ فقيهي - مدافع أيسر</p>
+                    <p>عبد الإله هوساوي - لاعب الوسط المحور</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('btn-hilal').addEventListener('click', function() {
+            document.getElementById('hilal').classList.remove('hidden');
+            document.getElementById('ittihad').classList.add('hidden');
+        });
+
+        document.getElementById('btn-ittihad').addEventListener('click', function() {
+            document.getElementById('ittihad').classList.remove('hidden');
+            document.getElementById('hilal').classList.add('hidden');
+        });
+    </script>
+
+</body>
+</html>
